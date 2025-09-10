@@ -3,46 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tahir Abbas | Fiverr-Style Services</title>
+  <title>Tahir Abbas Services</title>
   <style>
-    body { margin:0; font-family: 'Segoe UI', sans-serif; background:#f7f7f7; color:#333; }
-    header { background:#1dbf73; padding:20px; text-align:center; color:#fff; }
-    header h1 { margin:0; font-size:2rem; }
-    header nav a { color:#fff; margin:0 12px; text-decoration:none; font-size:18px; }
-    header nav a:hover { text-decoration:underline; }
-
-    .hero { background:#f0fff8; padding:60px 20px; text-align:center; }
-    .hero h2 { font-size:2rem; margin-bottom:10px; }
-    .hero p { font-size:1.2rem; color:#555; }
-
-    .cards { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:20px; padding:40px; }
-    .card { background:#fff; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1); padding:20px; text-align:center; }
-    .card h3 { color:#1dbf73; margin-bottom:12px; }
-
-    .calc { max-width:420px; margin:40px auto; background:#fff; padding:20px; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1); }
-    .calc input, .calc select, .calc button { width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:6px; }
-    .calc button { background:#1dbf73; color:#fff; font-size:16px; border:none; cursor:pointer; }
-    .calc button:hover { background:#17a866; }
-    .calc h3 { text-align:center; }
-
-    .portfolio { padding:40px; background:#fff; }
-    .portfolio h2 { text-align:center; margin-bottom:20px; color:#1dbf73; }
-    .gallery { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:15px; }
-    .gallery img { width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
-
-    .cta { text-align:center; margin:40px 0; }
-    .cta a { text-decoration:none; padding:14px 26px; margin:10px; border-radius:6px; font-size:18px; display:inline-block; color:#fff; }
+    body { margin:0; padding:0; font-family: "Segoe UI", Arial, sans-serif; background:#f7f7f7; color:#333; }
+    header { background:#1dbf73; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; color:white; }
+    header h1 { margin:0; font-size:22px; }
+    nav a { margin:0 12px; color:white; text-decoration:none; font-size:16px; }
+    nav a:hover { text-decoration:underline; }
+    .hero { background:white; text-align:center; padding:60px 20px; box-shadow:0 2px 5px rgba(0,0,0,0.05); }
+    .hero h2 { color:#1dbf73; margin-bottom:10px; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; padding:40px 20px; }
+    .card { background:white; border-radius:10px; padding:25px; box-shadow:0 2px 8px rgba(0,0,0,0.1); text-align:center; }
+    .card h3 { margin-bottom:12px; color:#1dbf73; }
+    .cta { text-align:center; margin:30px 0; }
+    .cta a { text-decoration:none; padding:12px 24px; margin:0 8px; display:inline-block; border-radius:6px; font-size:18px; color:#fff; }
     .whatsapp { background:#25D366; }
     .fb { background:#1877F2; }
-    .cta a:hover { opacity:0.9; }
-
-    .footer { background:#333; color:#fff; text-align:center; padding:20px; margin-top:40px; }
-    .counter { margin-top:10px; font-size:14px; color:#bbb; }
-
-    @media(max-width:600px){
-      header nav { display:flex; flex-wrap:wrap; justify-content:center; }
-      .hero h2 { font-size:1.6rem; }
-    }
+    .calc { max-width:500px; margin:40px auto; padding:25px; background:white; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+    .calc h3 { margin-bottom:15px; color:#1dbf73; text-align:center; }
+    .calc label { font-weight:bold; }
+    .calc input, .calc select, .calc button { width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:6px; font-size:16px; }
+    .calc button { background:#1dbf73; color:white; border:none; cursor:pointer; }
+    .calc button:hover { background:#17a25f; }
+    footer { text-align:center; background:#1dbf73; color:white; padding:20px; margin-top:40px; }
+    .visitors { margin-top:10px; font-size:14px; color:#eee; }
   </style>
 </head>
 <body>
@@ -52,90 +36,115 @@
   <nav>
     <a href="#services">Services</a>
     <a href="#calculator">Pricing</a>
-    <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h2>High-Quality Digital Services — Professional & Affordable</h2>
-  <p>Book Formatting | Thesis Composing | Book Cover Design</p>
+  <h2>Book Formatting, Thesis Composing & Cover Design</h2>
+  <p>Professional, affordable, and high-quality academic & design services.</p>
 </section>
 
 <section class="cards" id="services">
-  <div class="card">
-    <h3>📚 Book Formatting</h3>
-    <p>Professional formatting in Word & InPage — TOC, headers, fonts, and clean design.</p>
-  </div>
-  <div class="card">
-    <h3>📝 Thesis Composing</h3>
-    <p>Composing according to university format with proper references and structure.</p>
-  </div>
-  <div class="card">
-    <h3>🎨 Book Cover Design</h3>
-    <p>Creative, print-ready, and KDP-compliant book covers for authors and publishers.</p>
-  </div>
+  <div class="card"><h3>📚 Book Formatting</h3><p>Professional formatting in Word & InPage, TOC, Headers, and styles.</p></div>
+  <div class="card"><h3>📝 Thesis Composing</h3><p>Complete thesis composing as per university format & referencing.</p></div>
+  <div class="card"><h3>🎨 Cover Design</h3><p>Creative, print-ready, and KDP-compliant book cover design.</p></div>
+</section>
+
+<section class="cta">
+  <a class="whatsapp" href="https://wa.me/923074364266?text=Hello%20Tahir%20Bhai%2C%20I%20need%20your%20services" target="_blank">WhatsApp</a>
+  <a class="fb" href="https://m.me/tahirabbas.edu" target="_blank">Messenger</a>
 </section>
 
 <section class="calc" id="calculator">
   <h3>Estimate Your Price</h3>
-  <label>Number of Pages:</label>
-  <input type="number" id="pages" placeholder="Example: 20" />
-  <label>Select Service:</label>
+  <label>Number of Pages (A4):</label>
+  <input type="number" id="pages" placeholder="Example: 50" />
+
+  <label>Choose Service:</label>
   <select id="service">
-    <option value="0">Choose</option>
-    <option value="200">Book Formatting (Rs/page)</option>
-    <option value="300">Thesis Composing (Rs/page)</option>
-    <option value="2500_flat">Book Cover Design (Flat Rate)</option>
+    <option value="0">Select</option>
+    <option value="formatting">Book Formatting</option>
+    <option value="thesis">Thesis Composing</option>
+    <option value="cover">Book Cover Design</option>
   </select>
+
+  <label>If Formatting or Thesis: Select Price per Page (Rs):</label>
+  <select id="pricePerPage">
+    <option value="0">Select</option>
+    <option value="80">80</option>
+    <option value="90">90</option>
+    <option value="100">100</option>
+    <option value="110">110</option>
+    <option value="120">120</option>
+  </select>
+
+  <label>If Cover Design: Select Flat Price (Rs):</label>
+  <select id="coverPrice">
+    <option value="0">Select</option>
+    <option value="1000">1000</option>
+    <option value="2000">2000</option>
+    <option value="3000">3000</option>
+    <option value="4000">4000</option>
+    <option value="5000">5000</option>
+  </select>
+
   <button onclick="calculate()">Calculate</button>
-  <p id="result" style="font-size:1.2em; font-weight:bold; text-align:center;"></p>
+  <p id="result" style="font-size:1.2em; font-weight:bold;"></p>
+
+  <h3>🔗 Generate Custom Link</h3>
+  <button onclick="generateLink()">Get Link</button>
+  <p><input type="text" id="customLink" readonly style="width:100%; padding:8px;" /></p>
 </section>
 
-<section class="portfolio" id="portfolio">
-  <h2>Completed Projects Portfolio</h2>
-  <div class="gallery">
-    <img src="https://via.placeholder.com/400x250?text=Project+1" alt="Project 1">
-    <img src="https://via.placeholder.com/400x250?text=Project+2" alt="Project 2">
-    <img src="https://via.placeholder.com/400x250?text=Project+3" alt="Project 3">
-    <img src="https://via.placeholder.com/400x250?text=Project+4" alt="Project 4">
-  </div>
-</section>
-
-<section class="cta">
-  <a class="whatsapp" href="https://wa.me/923074364266?text=Hello%20Tahir%20Bhai%2C%20I%20need%20your%20services" target="_blank">Contact on WhatsApp</a>
-  <a class="fb" href="https://m.me/tahirabbas.edu" target="_blank">Facebook Messenger</a>
-</section>
-
-<footer class="footer" id="contact">
-  <h3>Contact</h3>
-  <p>WhatsApp: +923074364266</p>
-  <p>Facebook: tahirabbas.edu</p>
-  <div class="counter">
-    Visitors: <span id="visits"></span>
-  </div>
+<footer id="contact">
+  <p>WhatsApp: +923074364266 | Facebook: tahirabbas.edu</p>
+  <div class="visitors">Visitors: <span id="visitorCount">0</span></div>
 </footer>
 
 <script>
+  // Price Calculator
   function calculate() {
-    var p = document.getElementById('pages').value;
-    var s = document.getElementById('service').value;
-    var price = 0;
-    if (s === "2500_flat") {
-      price = 2500;
-    } else {
-      price = Math.max((p * parseInt(s)), 2000);
+    let pages = parseInt(document.getElementById("pages").value) || 0;
+    let service = document.getElementById("service").value;
+    let pricePerPage = parseInt(document.getElementById("pricePerPage").value) || 0;
+    let coverPrice = parseInt(document.getElementById("coverPrice").value) || 0;
+    let price = 0;
+
+    if (service === "formatting" || service === "thesis") {
+      price = pages * pricePerPage;
+    } else if (service === "cover") {
+      price = coverPrice;
     }
-    document.getElementById('result').textContent = "Estimated Price: Rs " + price;
+
+    document.getElementById("result").textContent = "Estimated Price: Rs " + price;
   }
 
-  // Visitor Counter (Free Local Storage)
-  if(localStorage.visits){
-    localStorage.visits = Number(localStorage.visits) + 1;
-  } else {
-    localStorage.visits = 1;
+  // Visitor Counter
+  let count = localStorage.getItem("visitorCount") || 0;
+  count++;
+  localStorage.setItem("visitorCount", count);
+  document.getElementById("visitorCount").textContent = count;
+
+  // Custom Link Generator
+  function generateLink() {
+    let pages = document.getElementById("pages").value;
+    let service = document.getElementById("service").value;
+    let pricePerPage = document.getElementById("pricePerPage").value;
+    let coverPrice = document.getElementById("coverPrice").value;
+
+    let baseUrl = window.location.origin + window.location.pathname;
+    let link = `${baseUrl}?pages=${pages}&service=${service}&ppp=${pricePerPage}&cover=${coverPrice}#calculator`;
+
+    document.getElementById("customLink").value = link;
   }
-  document.getElementById('visits').textContent = localStorage.visits;
+
+  // Auto-fill from URL
+  const params = new URLSearchParams(window.location.search);
+  if(params.has("pages")) document.getElementById("pages").value = params.get("pages");
+  if(params.has("service")) document.getElementById("service").value = params.get("service");
+  if(params.has("ppp")) document.getElementById("pricePerPage").value = params.get("ppp");
+  if(params.has("cover")) document.getElementById("coverPrice").value = params.get("cover");
 </script>
 
 </body>
